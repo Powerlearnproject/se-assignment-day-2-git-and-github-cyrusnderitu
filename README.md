@@ -45,11 +45,44 @@
 
 ## Detail the steps involved in making your first commit to a GitHub repository. What are commits, and how do they help in tracking changes and managing different versions of your project?
 
+    A Commit is snapshot of all the files in your project at a particular point in time.
+
+    - Make changes to your code 
+    - Stage those changes made using git add
+    - Commit files using a descriptive message of the changes made to the repo.
+
 ## How does branching work in Git, and why is it an important feature for collaborative development on GitHub? Discuss the process of creating, using, and merging branches in a typical workflow.
+
+    Creating a git branch by: git branch <branchname>
+
+    Branching allows developers create an isolated environment where one can bug fix, test specific feature or experimenting on code without affecting the main code.
+
+    Process of branching and merging:
+        - git branch <branchname> - creating the branch
+        - git checkout / git switch <branchname> - Login into the branch
+        - Make changes in the brach name
+        - git chekout main - Go back to the parent branch
+        - git merge <branchname> - Mergin the branch to the master
 
 ## Explore the role of pull requests in the GitHub workflow. How do they facilitate code review and collaboration, and what are the typical steps involved in creating and merging a pull request?
 
+    - Pull request is a digital form of a formal request to merge a change on a feature branch to the main.
+
+    Typical pull request workflow:
+        - Create a branch: A developer creates a new branch from the main branch to isolate their changes. 
+        - Make changes: The developer commits their modifications to the feature branch. 
+        - Open a pull request: The developer initiates a pull request, specifying the target branch (usually the main branch) and providing a description of the changes. 
+        - Review process: Other team members review the pull request, leaving comments and feedback. 
+        - Addressing feedback: The developer addresses the feedback by making necessary changes to their branch. 
+        - Merge: Once the pull request is approved, the changes are merged into the target branch. 
+
 ## Discuss the concept of "forking" a repository on GitHub. How does forking differ from cloning, and what are some scenarios where forking would be particularly useful?
+
+    [I]     Forking is the process of contributing to a project without having the permision to make changes by creating copy of the Original, making changes and then requesting for a pull request.
+
+    [II]    Forking differs from cloning in the sense that forking creates a copy of the project REMOTELY on your own remote account allowing you to make changes without affecting the original while cloning allows you to make a copy of the original but on your LOCAL computer allowing you to make changes  without afffecting the original.
+
+    [III]   With forking, you can make changes and push the changes but it won't end up affecting the main repo but for cloning if changes are made
 
 ## Examine the importance of issues and project boards on GitHub. How can they be used to track bugs, manage tasks, and improve project organization? Provide examples of how these tools can enhance collaborative efforts.
 
